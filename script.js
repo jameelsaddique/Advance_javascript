@@ -32,3 +32,22 @@
 
 // Now I study about Object destructuring
 
+ const dreamHolidays = {
+    destination : 'Murree',
+    duration : '5 days',
+    activities: "Relaxing and  enjoying the scenic beauty",
+    accommodation: "Cozy cabin by the lake",
+
+}
+const {destination, duration, activities, accommodation} = dreamHolidays;
+const finalmessage = `My dream holiday is to ${destination} for ${duration} where I can enjoy ${activities} and stay in a ${accommodation}..`
+console.log(finalmessage)
+
+//Now I practice about setTimout function
+
+export function logAnswer(Capital ){
+   console.log(`The capital of Pakistan is ${Capital}..`)
+   const capital = setTimeout(logAnswer, 3000, Capital)
+
+
+}
